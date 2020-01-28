@@ -27,7 +27,7 @@ public class Main {
         System.out.println();
 
         System.out.println("Ejercicio #3:");
-        grupos2(palabra, "", 0);
+        grupos(palabra, "", 0);
     }
 
 
@@ -47,13 +47,13 @@ public class Main {
     }
 
 
-    public static void grupos2(String palabra, String parte, int index) {
+    public static void grupos(String palabra, String parte, int index) {
         if (parte.length()==palabra.length()) {
             System.out.println(palabra);
         } else {
             System.out.println(parte);
             for (int i=index; i<palabra.length(); i++) {
-                grupos2(palabra, parte+palabra.charAt(i), i+1);
+                grupos(palabra, parte+palabra.charAt(i), i+1);
             }
         }
     }
