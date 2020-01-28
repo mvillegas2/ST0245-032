@@ -14,7 +14,6 @@ public class Main {
         else System.out.println("False");
         System.out.println();
 
-
         System.out.println("Ejercicio #2:");
         boolean a2, b2, c2, d2;
         int[] elementos = {2, 4, 8};
@@ -27,15 +26,6 @@ public class Main {
             System.out.println("True");
         else System.out.println("False");
         System.out.println();
-
-
-        System.out.println("Ejercicio #3:");
-        String palabra = "Eafit";
-        for (int i=0; i<palabra.length(); i++) {
-            grupos(palabra, "" + palabra.charAt(i), i);
-        }
-        System.out.println("Ejercicio #3:");
-        grupos(palabra, "", -1);
 
         System.out.println("Ejercicio #3:");
         grupos2(palabra, "", 0);
@@ -57,17 +47,6 @@ public class Main {
         } else return false;
     }
 
-
-    public static void grupos(String palabra, String parte, int index) {
-        if (parte.length()==palabra.length()) {
-            System.out.println(palabra);
-        } else {
-            System.out.println(parte);
-            for (int i=index+1; i<palabra.length(); i++) {
-                grupos(palabra, parte+palabra.charAt(i), i);
-            }
-        }
-    }
 
     public static void grupos2(String palabra, String parte, int index) {
         if (parte.length()==palabra.length()) {
