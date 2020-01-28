@@ -27,6 +27,7 @@ public class Main {
         System.out.println();
 
         System.out.println("Ejercicio #3:");
+        String palabra = "Hola";
         grupos(palabra, "", 0);
     }
 
